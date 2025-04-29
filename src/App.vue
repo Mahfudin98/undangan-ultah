@@ -3,7 +3,7 @@ import { HomeIcon, PauseIcon, PlayIcon } from '@heroicons/vue/24/outline'
 import { RouterLink, RouterView } from 'vue-router'
 import AtasFrozen from '@/assets/bingkai/aladin/bingkai-atas.png'
 import BawahFrozen from '@/assets/bingkai/aladin/bingkai-bawah.png'
-// import BawahBungaFrozen from '@/assets/bingkai/bawah-bunga-frozen.png'
+import BawahBungaFrozen from '@/assets/bingkai/aladin/karakter.png'
 import EsBackground from '@/assets/bingkai/aladin/bg-aladin.png'
 import { computed, onMounted, ref } from 'vue'
 import { useMenuStore } from './router/menu'
@@ -95,7 +95,7 @@ onMounted(() => {
           class="absolute top-0 right-0 object-cover h-full opacity-65"
         />
         <img :src="BawahFrozen" v-if="isOpen" alt="" class="absolute bottom-0 z-10 animate-zoom" />
-        <!-- <img :src="BawahBungaFrozen" alt="" class="absolute bottom-0 animate-zoom" /> -->
+        <img :src="BawahBungaFrozen" alt="" class="absolute bottom-0" />
       </section>
       <button
         v-if="!isOpen"

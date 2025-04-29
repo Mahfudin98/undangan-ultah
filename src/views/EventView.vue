@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
-const countdownDate = ref(new Date('2024-05-14T23:59:59').getTime())
+const countdownDate = ref(new Date('2025-05-14T15:00:00').getTime())
 const days = ref(0)
 const hours = ref(0)
 const minutes = ref(0)
@@ -36,18 +36,18 @@ onMounted(() => {
     <div class="flex flex-col gap-1 lg:gap-8">
       <div class="leading-relaxed text-center">
         <h1
-          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-2xl bg-gradient-to-t from-sky-200 to-sky-500 bg-clip-text font-frozito"
+          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent capitalize lg:text-2xl bg-gradient-to-t from-yellow-300 to-yellow-500 bg-clip-text font-aladin"
         >
-          MIRACLE SUNSHINE ELSAVANA SUNANTO
+          miracle sunshine elsavana sunanto
         </h1>
         <h1
-          class="inline-block mb-5 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-sky-200 to-sky-500 bg-clip-text font-frozito"
+          class="block mb-5 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-yellow-300 to-yellow-500 bg-clip-text font-aladin"
         >
-          (CECEL)
+          (cecel)
         </h1>
-        <p class="text-lg font-medium text-sky-500">
-          Putri dari <span class="font-bold text-sky-600">H.Aceng Sunanto</span> &
-          <span class="font-bold text-sky-600">Mia Nurma Sunanto</span>
+        <p class="text-lg font-medium text-yellow-300">
+          Putri dari <span class="font-bold text-yellow-400">H.Aceng Sunanto</span> &
+          <span class="font-bold text-yellow-400">Mia Nurma Sunanto</span>
         </p>
       </div>
 
@@ -56,29 +56,30 @@ onMounted(() => {
           <article class="font-sans leading-relaxed text-start">
             <p class="font-semibold">
               Hai teman-teman
-              <span class="font-bold font-frozito">Cecel</span>
+              <span class="font-bold font-aladin">Cecel</span>
             </p>
             <p>
-              Datang ya ke acara <span class="font-bold font-frozito">Cecel</span>, pakai baju warna
-              <span class="font-bold text-white badge badge-info">Putih</span>/<span
-                class="font-bold text-sky-500 badge"
+              Datang ya ke acara <span class="font-bold font-aladin">Cecel</span>, pakai baju warna
+              <span class="font-bold text-slate-800 badge badge-warning">Putih</span>/<span
+                class="font-bold text-yellow-500 badge"
                 >Biru Muda</span
               >
             </p>
             <p>
               pada hari & tanggal
-              <span class="text-white badge badge-info">Selasa, 14 Mei 2024</span> yang betempat di
-              <span class="text-white badge badge-info">Villa LS Skincare Reborn</span> pukul
-              <span class="text-white badge badge-info">16.00 WIB</span>
+              <span class="text-slate-800 badge badge-warning">Rabu, 14 Mei 2025</span> yang
+              betempat di
+              <span class="text-slate-800 badge badge-warning">Villa LS Skincare Reborn</span> pukul
+              <span class="text-slate-800 badge badge-warning">15.00 WIB</span>
             </p>
-            <p>Salam manis <span class="font-bold font-frozito">Cecel</span>.</p>
+            <p>Salam manis <span class="font-bold font-aladin">Cecel</span>.</p>
           </article>
         </div>
       </div>
 
       <div class="grid self-center grid-flow-col gap-0.5 lg:gap-5 text-center auto-cols-max">
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-sky-200 to-sky-500 text-base-100 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${days}`"></span>
@@ -86,7 +87,7 @@ onMounted(() => {
           days
         </div>
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-sky-200 to-sky-500 text-base-100 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${hours}`"></span>
@@ -94,7 +95,7 @@ onMounted(() => {
           hours
         </div>
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-sky-200 to-sky-500 text-base-100 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${minutes}`"></span>
@@ -102,7 +103,7 @@ onMounted(() => {
           min
         </div>
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-sky-200 to-sky-500 text-base-100 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${seconds}`"></span>

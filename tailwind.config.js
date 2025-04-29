@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        frozito: ['Frozito', 'sans-serif']
+        frozito: ['Frozito', 'sans-serif'],
+        aladin: ['Aladin', 'system-ui']
       }
     }
   },

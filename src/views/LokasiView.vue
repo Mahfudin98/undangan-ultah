@@ -5,13 +5,13 @@
     <div class="flex flex-col gap-6">
       <div class="leading-relaxed text-center">
         <h1
-          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-sky-200 to-sky-500 bg-clip-text font-frozito"
+          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-white to-yellow-500 bg-clip-text font-aladin"
         >
           Lokasi
         </h1>
       </div>
       <div
-        class="bg-gradient-to-t from-sky-200 to-sky-500 text-base-content bg-opacity-30 backdrop-blur-sm rounded-btn"
+        class="bg-gradient-to-t from-white to-yellow-500 text-base-content bg-opacity-30 backdrop-blur-sm rounded-btn"
       >
         <div class="p-1">
           <iframe
@@ -26,7 +26,7 @@
           ></iframe>
         </div>
       </div>
-      <div class="bg-base-100 text-base-content bg-opacity-30 backdrop-blur-sm rounded-btn">
+      <div class="text-white bg-yellow-800 bg-opacity-30 backdrop-blur-sm rounded-btn">
         <div class="p-4">
           <article class="font-sans leading-relaxed text-center">
             <p>

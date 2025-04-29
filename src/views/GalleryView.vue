@@ -15,7 +15,7 @@ import Foto9 from '@/assets/gallery/foto-9.jpeg'
     <div class="flex flex-col gap-2">
       <div class="leading-relaxed text-center">
         <h1
-          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-sky-200 to-sky-500 bg-clip-text font-frozito"
+          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-white to-yellow-500 bg-clip-text font-aladin"
         >
           Photo Gallery
         </h1>

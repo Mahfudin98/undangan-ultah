@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BingkaiAnimasi from '@/components/BingkaiAnimasi.vue'
 import { onMounted, ref } from 'vue'
 
 const countdownDate = ref(new Date('2025-05-14T15:00:00').getTime())
@@ -32,85 +33,93 @@ onMounted(() => {
 })
 </script>
 <template>
-  <main class="grid w-full min-h-screen p-2 place-items-center">
-    <div class="flex flex-col gap-1 lg:gap-8">
-      <div class="leading-relaxed text-center">
+  <main class="grid w-full min-h-screen p-2 place-items-center absolute z-[99]">
+    <div class="flex flex-col items-center justify-center gap-1 lg:gap-8">
+      <div class="max-w-xs leading-relaxed text-center">
         <h1
-          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent capitalize lg:text-2xl bg-gradient-to-t from-yellow-300 to-yellow-500 bg-clip-text font-aladin"
+          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent capitalize lg:text-2xl bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
+          data-aos="fade-right"
         >
           miracle sunshine elsavana sunanto
         </h1>
         <h1
-          class="block mb-5 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-yellow-300 to-yellow-500 bg-clip-text font-aladin"
+          class="block mb-5 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
+          data-aos="fade-left"
         >
           (cecel)
         </h1>
-        <p class="text-lg font-medium text-yellow-300">
-          Putri dari <span class="font-bold text-yellow-400">H.Aceng Sunanto</span> &
-          <span class="font-bold text-yellow-400">Mia Nurma Sunanto</span>
+        <p class="text-lg font-medium text-purple-500" data-aos="fade-down">
+          Putri dari <span class="font-bold text-purple-600">H.Aceng Sunanto</span> &
+          <span class="font-bold text-purple-600">Mia Nurma Sunanto</span>
         </p>
       </div>
 
-      <div class="bg-base-100 text-base-content bg-opacity-30 backdrop-blur-sm rounded-btn">
-        <div class="p-4">
-          <article class="font-sans leading-relaxed text-start">
-            <p class="font-semibold">
-              Hai teman-teman
-              <span class="font-bold font-aladin">Cecel</span>
-            </p>
-            <p>
-              Datang ya ke acara <span class="font-bold font-aladin">Cecel</span>, pakai baju warna
-              <span class="font-bold text-slate-800 badge badge-warning">Putih</span>/<span
-                class="font-bold text-yellow-500 badge"
-                >Biru Muda</span
-              >
-            </p>
-            <p>
-              pada hari & tanggal
-              <span class="text-slate-800 badge badge-warning">Rabu, 14 Mei 2025</span> yang
-              betempat di
-              <span class="text-slate-800 badge badge-warning">Villa LS Skincare Reborn</span> pukul
-              <span class="text-slate-800 badge badge-warning">15.00 WIB</span>
-            </p>
-            <p>Salam manis <span class="font-bold font-aladin">Cecel</span>.</p>
-          </article>
+      <div data-aos="fade-right">
+        <div class="max-w-md bg-purple-700/30 text-info-content backdrop-blur-md rounded-box">
+          <div class="p-4">
+            <article class="font-sans leading-relaxed text-start">
+              <p class="font-semibold">
+                Hai teman-teman
+                <span class="font-bold font-aladin">Cecel</span>
+              </p>
+              <p>
+                Datang ya ke acara <span class="font-bold font-aladin">Cecel</span>, pakai baju
+                warna
+                <span class="font-bold text-purple-900 badge badge-white">Putih</span>
+              </p>
+              <p>
+                pada hari & tanggal
+                <span class="text-white bg-purple-500 badge">Rabu, 14 Mei 2025</span> yang betempat
+                di
+                <span class="text-white bg-purple-500 badge">Villa LS Skincare Reborn</span>
+                pukul
+                <span class="text-white bg-purple-500 badge">15.00 WIB</span>
+              </p>
+              <p>Salam manis <span class="font-bold font-aladin">Cecel</span>.</p>
+            </article>
+          </div>
         </div>
       </div>
 
       <div class="grid self-center grid-flow-col gap-0.5 lg:gap-5 text-center auto-cols-max">
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-purple-300 to-purple-500 text-slate-900 rounded-box border-base-content"
+          data-aos="fade-right"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${days}`"></span>
           </span>
-          days
+          Hari
         </div>
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-purple-300 to-purple-500 text-slate-900 rounded-box border-base-content"
+          data-aos="fade-up"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${hours}`"></span>
           </span>
-          hours
+          Jam
         </div>
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-purple-300 to-purple-500 text-slate-900 rounded-box border-base-content"
+          data-aos="fade-down"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${minutes}`"></span>
           </span>
-          min
+          Menit
         </div>
         <div
-          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-slate-900 rounded-btn border-base-content"
+          class="flex flex-col px-4 py-2 border border-opacity-50 shadow-xl bg-gradient-to-r from-purple-300 to-purple-500 text-slate-900 rounded-box border-base-content"
+          data-aos="fade-left"
         >
           <span class="font-mono text-5xl countdown">
             <span :style="`--value: ${seconds}`"></span>
           </span>
-          sec
+          Detik
         </div>
       </div>
     </div>
   </main>
+  <BingkaiAnimasi />
 </template>

@@ -1,17 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BingkaiAnimasi from '@/components/BingkaiAnimasi.vue'
+</script>
 
 <template>
-  <main class="grid w-full min-h-screen p-2 place-items-center">
+  <main class="grid w-full min-h-screen p-2 place-items-center absolute z-[99]">
     <div class="flex flex-col gap-6">
       <div class="leading-relaxed text-center">
         <h1
-          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-white to-yellow-500 bg-clip-text font-aladin"
+          class="inline-block mb-1 text-3xl font-bold leading-snug text-transparent lg:text-4xl bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
+          data-aos="fade-up"
         >
           Lokasi
         </h1>
       </div>
       <div
-        class="bg-gradient-to-t from-white to-yellow-500 text-base-content bg-opacity-30 backdrop-blur-sm rounded-btn"
+        class="bg-gradient-to-t from-purple-700 to-purple-500 text-base-content bg-opacity-30 backdrop-blur-sm rounded-box"
+        data-aos="fade-down"
       >
         <div class="p-1">
           <iframe
@@ -22,11 +26,11 @@
             :allowfullscreen="true"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            class="w-full h-[250px] lg:h-[350px] rounded-btn"
+            class="w-full h-[250px] lg:h-[350px] rounded-box"
           ></iframe>
         </div>
       </div>
-      <div class="text-white bg-yellow-800 bg-opacity-30 backdrop-blur-sm rounded-btn">
+      <div class="text-white bg-purple-800/30 backdrop-blur-sm rounded-box" data-aos="fade-right">
         <div class="p-4">
           <article class="font-sans leading-relaxed text-center">
             <p>
@@ -38,4 +42,5 @@
       </div>
     </div>
   </main>
+  <BingkaiAnimasi />
 </template>

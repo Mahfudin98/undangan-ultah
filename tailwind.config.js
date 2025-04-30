@@ -6,6 +6,26 @@ export default {
       fontFamily: {
         frozito: ['Frozito', 'sans-serif'],
         aladin: ['Aladin', 'system-ui']
+      },
+      animation: {
+        'animate-wiggle': 'wiggle 2s ease-in-out infinite',
+        'animate-wiggle-putri': 'wiggle 3s ease-in-out infinite',
+        'animate-spin-cs': 'spin 50s linear infinite',
+        'animate-bounce-low': 'bounce-low 5s ease-in-out infinite'
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' }
+        },
+        'wiggle-putri': {
+          '0%, 100%': { transform: 'rotate(-1deg)' },
+          '50%': { transform: 'rotate(2deg)' }
+        },
+        'bounce-low': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-25px)' }
+        }
       }
     }
   },

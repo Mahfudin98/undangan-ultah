@@ -1,27 +1,46 @@
-@tailwind base;
-@tailwind components;
-@layer base {
-  @font-face {
-    font-family: 'Frozito';
-    src:
-      local('Frozito'),
-      url('./fonts/Frozito.woff') format('woff');
-  }
-}
-@tailwind utilities;
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+@import 'tailwindcss';
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
 }
 
-.animate-zoom {
-  animation: zoom 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+@theme {
+  --animate-wiggle: wiggle 2s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+  --animate-wiggle-putri: wiggle 3s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+  --animate-spin-cs: spin 50s linear infinite; /* slowed down spin */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  --animate-bounce-low: bounce-low 5s ease-in-out infinite;
+  @keyframes bounce-low {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+  }
+
+  --font-aladin: Aladin, system-ui;
 }

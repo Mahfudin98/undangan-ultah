@@ -6,17 +6,23 @@
           Silakan bergabung dengan kami untuk
         </p>
         <h1
-          class="inline-block text-4xl font-bold text-transparent capitalize bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
+          class="text-4xl font-bold text-transparent capitalize bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
           data-aos="fade-right"
         >
           magical party
         </h1>
         <h1
-          class="inline-block text-xl font-bold text-transparent capitalize lg:text-2xl bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
+          class="text-xl font-bold text-transparent capitalize lg:text-2xl bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
           data-aos="fade-left"
         >
           miracle sunshine elsavana sunanto (CECEL)
         </h1>
+        <h4
+          class="text-xl font-bold text-transparent capitalize lg:text-xl bg-gradient-to-t from-purple-700 to-purple-500 bg-clip-text font-aladin"
+          data-aos="fade-right"
+        >
+          Ulang tahun ke - 4
+        </h4>
       </div>
       <div class="mb-3 avatar">
         <div
@@ -40,14 +46,21 @@
 </template>
 
 <script lang="ts" setup>
-import Foto10 from '@/assets/gallery/foto-10.jpeg'
+import Foto10 from '@/assets/gallery/foto-sampul.jpeg'
 import BingkaiAnimasi from '@/components/BingkaiAnimasi.vue'
 import { useCounterStore } from '@/stores/counter'
+import { computed } from 'vue'
+import { useRouter } from 'vue-router'
 
 const useCounter = useCounterStore()
+const playing = computed(() => useCounter.isPlaying)
+const router = useRouter()
 function openPage() {
   useCounter.setOpen()
-  useCounter.setPlaying()
+  if (playing.value) {
+    useCounter.setPlaying()
+  }
+  router.push({ name: 'event' })
   const elem = document.documentElement
   if (!document.fullscreenElement) {
     elem.requestFullscreen().catch((err) => {
